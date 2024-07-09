@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nainesh Raval - Portfolio</title>
+    <link rel="shortcut icon" href="/images/logo-home.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/25654d6aaf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- header section -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo-home.png" class="logo" alt="logo">
+                <ul id="sideMenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i onclick="closeMenu()" class="fas fa-times"></i>
+                </ul>
+                <i onclick="openMenu()" class="fas fa-bars"></i>
+            </nav>
+            <div class="header-text">
+                <p>Front-end Developer</p>
+                <h1>Hi, I'm <span>Nainesh</span>.</h1>
+            </div>
+        </div>
+    </div>
+    <!-- about section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about-me.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur blanditiis beatae excepturi modi alias maxime sed ut temporibus, incidunt atque expedita. Excepturi fuga laudantium impedit enim. Sint est asperiores assumenda.</p>
+
+                    <div class="tab-titles">
+                        <p onclick="openTab('skills')"  class="tab-links active-link">Skills</p>
+                        <p onclick="openTab('certification')"  class="tab-links">Certification</p>
+                        <p onclick="openTab('education')"  class="tab-links">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <h4>I am Proficient with the following skills</h4>
+                        <ul class="skill-sets">
+                            <li><span>#HTML</span></li>
+                            <li><span>#CSS</span></li>
+                            <li><span>#Tailwind CSS</span></li>
+                            <li><span>#JAVASCRIPT</span></li>
+                            <li><span>#React JS</span></li>
+                            <li><span>#Firebase</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="certification">
+                        <ul>
+                            <li><span>2024</span></li>
+                            <div id="certification">
+                                <h3>Full-stack Web Developer</h3>
+                                <p>from Unified Mentor</p>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2017</span><br/>B.E in Electrical with 6.5 CGPA</li>
+                            <li><span>2014</span><br/>Diploma Electrical Engg. with 7.67 CGPA</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="title">Personal Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="/images/The-gym-manager.png" alt="">
+                    <div class="layer">
+                        <h3>Gym Management system</h3>
+                        <p>A web Application where gym owners can manage their trainers, members and bills</p>
+                        <a target="_blank" href="https://thegymmanager.netlify.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/images/meme-generator.png" alt="">
+                    <div class="layer">
+                        <h3>Meme Generator</h3>
+                        <p>This app Generates Random Meme with Image from Meme-API </p>
+                        <a target="_blank" href="https://memerandomly.netlify.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/images/quiz-app.png" alt="">
+                    <div class="layer">
+                        <h3>Quiz App</h3>
+                        <p>Where you can take a test for a competitive exam questions that helps to improve your learning</p>
+                        <a target="_blank" href="https://getquizapp.netlify.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <h1 class="title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="/images/infrafoam.png" alt="">
+                    <div class="layer">
+                        <h3>Infrafoam Industry</h3>
+                        <p>Is website of a Foam and mattresses manufacturer maintainnig its online presence</p>
+                        <a target="_blank" href="https://www.infrafoam.in/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/images/manpasand.png" alt="">
+                    <div class="layer">
+                        <h3>Manpasand Fastfood</h3>
+                        <p>A Local Fastfood Chain shows their Food Menu and branch locations </p>
+                        <a target="_blank" href="https://manpasandvadapav.netlify.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- contact -->
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>naineshrawal@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 84600 68103</p>
+                    <div class="social-icons">
+                        <a target="_blank" href="https://www.instagram.com/nainezs_/"><i class="fa-brands fa-instagram"></i></a>
+                        <a target="_blank" href="https://www.facebook.com/nainesh.rawal"><i class="fa-brands fa-facebook"></i></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/nainesh-raval/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a target="_blank" href="https://github.com/Naineshrawal"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="/images//Raval Nainesh.pdf" download class="btn">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button class="btn" type="submit">Submit</button>
+                    </form>
+                    <span id="alert"></span>
+                </div>
+            </div>
+        </div>
+     </div>
+     <!-- copyright -->
+      <div id="copyright">
+        <p>Copyright © Nainesh Raval</p>
+      </div>
+     
+</body>
+</html>
